@@ -6,9 +6,9 @@ var Maximus = {
 		}
 	},
 	addEvent: function(obj, type, fn) {		
-    	obj['e'+type+fn] = fn;
-    	obj[type+fn] = function(){obj['e'+type+fn](window.event);}
-    	obj.attachEvent('on'+type, obj[type+fn]);
+		obj['e'+type+fn] = fn;
+		obj[type+fn] = function(){obj['e'+type+fn](window.event);}
+		obj.attachEvent('on'+type, obj[type+fn]);
 	},
 	removeEvent: function(obj, type, fn) {
 		obj.detachEvent('on'+type, obj[type+fn]); obj[type+fn] = null;
