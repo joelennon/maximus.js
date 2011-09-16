@@ -1,5 +1,5 @@
 # maximus.js
 
-## Enabling position: fixed in IE6 using JavaScript
+Enabling fixed positioning in IE6 using JavaScript
 
-Readme coming soon...
+Readme coming soon. See demo.html for usage example.
