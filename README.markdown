@@ -61,8 +61,8 @@ and bottom. That's where maximus.js comes into play.
 If your browser window is 640px wide and 480px high, maximus.js will calculate the height of
 the center div as follows:
 
-width = (browser width - left - right) = (640 - 0 - 0) = 640  
-height = (browser height - top - bottom) = (480 - 0 - 0) = 480
+**width = (browser width - left - right) = (640 - 0 - 0) = 640  **
+**height = (browser height - top - bottom) = (480 - 0 - 0) = 480**
 
 Simple enough, right? But what if we want to introduce a header at the top of the screen that takes
 up, let's say 48 pixels in height. The syntax is as follows:
@@ -81,13 +81,13 @@ In this case, both the top and center elements will be changed to use absolute p
 
 For the top element, the dimensions are calculated as follows (assuming we still have a 640x480 window):
 
-width = (browser width - left - right) = (640 - 0 - 0) = 640  
-height = 48 (specifically specified in CSS)
+**width = (browser width - left - right) = (640 - 0 - 0) = 640  **
+**height = 48 (specifically specified in CSS)**
 
 For the center element, the following calculations are used:
 
-width = (browser width - left - right) = (640 - 0 - 0) = 640  
-height = (browser height - top - bottom) = (480 - 48 - 0) = 432
+**width = (browser width - left - right) = (640 - 0 - 0) = 640  **
+**height = (browser height - top - bottom) = (480 - 48 - 0) = 432**
 
 You'll notice that in this case the top element's height is not calculated automatically as it
 is explicitly specified in CSS and there is no "bottom" property declared. If an element does not
@@ -117,12 +117,12 @@ In this case, the top and bottom will both have a calculated width of 640 as wel
 specified heights of 72px and 32px, respectively. The left element has a explicitly defined width and
 its height is calculated as follows:
 
-height = (browser height - top - bottom) = (480 - 72 - 32) = 376
+**height = (browser height - top - bottom) = (480 - 72 - 32) = 376**
 
 This height will be the same for the center and right divs as they have the same top and bottom values
 as the left div. The center will also have a dynamically calculated width, as follows:
 
-width = (browser width - left - right) = (640 - 200 - 200) = 240
+**width = (browser width - left - right) = (640 - 200 - 200) = 240**
 
 If you have any feedback, comments or questions, contact @joelennon on Twitter. More detailed documentation
 and additional usage examples coming soon.
