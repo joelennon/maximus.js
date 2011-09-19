@@ -69,13 +69,13 @@ up, let's say 48 pixels in height. The syntax is as follows:
 
 HTML markup:
 
-  <div id="top">Top</div>
-  <div id="center">Center</div>
+    <div id="top">Top</div>
+    <div id="center">Center</div>
 
 CSS styles:
 
-  #top { background: yellow; position: fixed; top: 0; left: 0; right: 0; height: 48px; }
-  #center { background: lime; position: fixed; top: 48px; bottom: 0; left: 0; right: 0; }
+    #top { background: yellow; position: fixed; top: 0; left: 0; right: 0; height: 48px; }
+    #center { background: lime; position: fixed; top: 48px; bottom: 0; left: 0; right: 0; }
 
 In this case, both the top and center elements will be changed to use absolute positioning in IE6.
 
@@ -99,19 +99,19 @@ sidebar as well as the mandatory center element.
 
 HTML markup:
 
-  <div id="top">Top</div>
-  <div id="left">Left</div>
-  <div id="center">Center</div>
-  <div id="right">Right</div>
-  <div id="bottom">Bottom</div>
+        <div id="top">Top</div>
+        <div id="left">Left</div>
+        <div id="center">Center</div>
+        <div id="right">Right</div>
+        <div id="bottom">Bottom</div>
 
 CSS styles:
 
-  #top { background: yellow; position: fixed; top: 0; left: 0; right: 0; height: 72px; }
-  #left { background: pink; position: fixed; top: 72px; bottom: 32px; left: 0; width: 200px; }
-  #center { background: lime; position: fixed; top: 72px; bottom: 32px; left: 200px; right: 200px; }
-  #right { background: cyan; position: fixed; top: 72px; bottom: 32px; right: 0; width: 200px; }
-  #bottom { background: orange; position: fixed; bottom: 0; left: 0; right: 0; height: 32px; }
+      #top { background: yellow; position: fixed; top: 0; left: 0; right: 0; height: 72px; }
+      #left { background: pink; position: fixed; top: 72px; bottom: 32px; left: 0; width: 200px; }
+      #center { background: lime; position: fixed; top: 72px; bottom: 32px; left: 200px; right: 200px; }
+      #right { background: cyan; position: fixed; top: 72px; bottom: 32px; right: 0; width: 200px; }
+      #bottom { background: orange; position: fixed; bottom: 0; left: 0; right: 0; height: 32px; }
 
 In this case, the top and bottom will both have a calculated width of 640 as well as their explicitly
 specified heights of 72px and 32px, respectively. The left element has a explicitly defined width and
