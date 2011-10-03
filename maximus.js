@@ -6,14 +6,12 @@
 	//Non-IE6 code removed. removeEvent is not needed so it has also been removed.
 	var addEvent = function(obj, type, fn) {		
 		obj['e'+type+fn] = fn; 
-		obj[type+fn] = function(){obj['e'+type+fn](window.event);}
+		obj[type+fn] = function(){ obj['e'+type+fn](window.event); }
 		obj.attachEvent('on'+type, obj[type+fn]);
 	};
 	//This is where the magic happens
 	var max = function() {
-		var d = document, 
-			de = d.documentElement, 
-			db = d.body;
+		var d = document, de = d.documentElement, db = d.body;
 			
 		//Overflows on the document body wreck the 100% layout approach
 		if(de) { de.style.overflow = "hidden"; }
@@ -25,8 +23,7 @@
 			height: de.clientHeight || db.clientHeight || 0
 		}
 		
-		var fixed = [], 
-			els = (d.all) ? d.all : d.getElementsByTagName("*");
+		var fixed = [], els = (d.all) ? d.all : d.getElementsByTagName("*");
 		
 		//Loop through the DOM looking for position:fixed. We add a class
 		//maximus-fixed to each item found (for when the window is resized).
